@@ -1,4 +1,12 @@
 import streamlit as st
+
+# Test transformers installation
+try:
+    from transformers import pipeline
+    st.success("Transformers library loaded successfully!")
+except ImportError:
+    st.error("Transformers library is missing. Please check requirements.txt.")
+import streamlit as st
 import json
 import os
 from datetime import datetime
