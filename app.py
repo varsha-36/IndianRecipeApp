@@ -3,6 +3,17 @@ import json
 import os
 from datetime import datetime
 from gtts import gTTS
+import streamlit as st
+
+# Try to import gTTS safely
+try:
+    from gtts import gTTS
+    gtts_available = True
+    st.info("gTTS library loaded successfully.")
+except ImportError:
+    gtts_available = False
+    st.warning("gTTS library is missing. Some text-to-speech features may not work.")
+
 import tempfile
 
 # ------------------------------
