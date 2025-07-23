@@ -1,4 +1,7 @@
 streamlit
-gTTS
 transformers
 torch
+sentencepiece
+scikit-learn
+pandas
+numpy
